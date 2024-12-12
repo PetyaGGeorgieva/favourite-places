@@ -2,7 +2,7 @@ import { View, Pressable, Text, StyleSheet } from "react-native";
 
 function PlaceItem({ place, onSelect }) {
   return (
-    <Pressable>
+    <Pressable onPress={onSelect}>
       <Image source={{ uri: place.imageUri }} />
       <View>
         <Text>{place.title}</Text>
@@ -15,5 +15,5 @@ function PlaceItem({ place, onSelect }) {
 export default PlaceItem;
 
 const styles = StyleSheet.create({
-  
+
 });
